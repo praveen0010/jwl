@@ -16,8 +16,8 @@ const Home = () => {
         </div>
         <ul className="w-full  sm:flex-row gap-2 p-3  flex flex-col  justify-between items-center ">
           <Link
-            className="w-full hover:transition-transform duration-100 hover:bg-black hover:scale-110
-           hover:text-yellow-500  bg-yellow-300 font-semibold text-center p-7 text-2xl"
+            className="w-full hover:transition-transform duration-100 hover:bg-black hover:scale-110 bgcol
+           hover:text-yellow-500   font-semibold text-center p-7 text-2xl"
             to="/Goldform"
           >
             Gold Coins
@@ -25,7 +25,7 @@ const Home = () => {
 
           <Link
             className="w-full hover:transition-transform duration-100 hover:bg-black hover:scale-110
-           hover:text-yellow-500  bg-yellow-300 font-semibold text-center p-7 text-2xl"
+           hover:text-yellow-500  bgcol font-semibold text-center p-7 text-2xl"
             to="/Silverform"
           >
             Silver Coins
@@ -33,7 +33,7 @@ const Home = () => {
 
           <Link
             className="w-full  hover:transition-transform duration-100 hover:bg-black hover:scale-110
-            hover:text-yellow-500  bg-yellow-300 font-semibold text-center p-7 text-2xl"
+            hover:text-yellow-500  bgcol font-semibold text-center p-7 text-2xl"
             to="/Chitform"
           >
             Chit Payment

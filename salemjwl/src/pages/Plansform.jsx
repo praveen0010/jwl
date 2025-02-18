@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
 import logo from "../Assets/images/logo.jpeg";
 
 const Plansform = () => {
-  let { alterid, pageform } = useParams();
-  const [menushow, setmenushow] = useState(false);
+  let { pageform } = useParams();
   const goldplan = ["200g", "500g", "1000g"];
   const silverplan = ["500g", "1000g", "1kg"];
   const chitplan = ["10,00000", "20,00000", "50,00000"];
@@ -39,28 +38,13 @@ const Plansform = () => {
     mobile: "",
     planAmtorGrm: "",
   });
-  // useEffect(() => {
-  //   const userlist = JSON.parse(localStorage.getItem("user"));
-  //   if (alterid) {
-  //     let alteruser = userlist.find(
-  //       (user) => user.id?.toString() === alterid?.toString()
-  //     );
-  //     if (alteruser) {
-  //       setFormData(alteruser);
-  //     } else {
-  //       alterid = "";
-  //     }
-  //   }
-  // }, []);
   function menushowfun() {
-    setmenushow(true);
     let menudiv = document.getElementById("Slideanimi");
     menudiv.classList.add("slide-in");
     menudiv.classList.remove("slide-out");
   }
 
   function menuhiddenfun() {
-    setmenushow(false);
     let menudiv = document.getElementById("Slideanimi");
     menudiv.classList.remove("slide-in");
     menudiv.classList.add("slide-out");
